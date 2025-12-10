@@ -1,0 +1,37 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+[data-theme='dark'] .features {
+  background-color: #0d1117;
+}
+
+.featureCard {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.featureCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .featureCard {
+  background-color: #1a202c; /* A dark background for the cards in dark mode */
+}
+
+.featureIcon {
+  font-size: 3em;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+

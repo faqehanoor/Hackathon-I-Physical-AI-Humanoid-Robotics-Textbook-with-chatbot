@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-headings: 'Poppins', sans-serif;
+  --ifm-color-primary: #00a8e8; /* A vibrant teal */
+  --ifm-color-primary-dark: #007ea7;
+  --ifm-color-primary-darker: #005a7d;
+  --ifm-color-primary-darkest: #003a52;
+  --ifm-color-primary-light: #33b5e8;
+  --ifm-color-primary-lighter: #66c7ea;
+  --ifm-color-primary-lightest: #99d9ec;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #00a8e8; /* A vibrant teal */
+  --ifm-color-primary-dark: #007ea7;
+  --ifm-color-primary-darker: #005a7d;
+  --ifm-color-primary-darkest: #003a52;
+  --ifm-color-primary-light: #33b5e8;
+  --ifm-color-primary-lighter: #66c7ea;
+  --ifm-color-primary-lightest: #99d9ec;
+  --ifm-background-color: #0d1117;
+  --ifm-font-color-base: #c9d1d9;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.heroGlow {
+  box-shadow: 0 0 150px var(--ifm-color-primary-darkest);
+}
+/* Custom footer styles for uniqueness */
+.footer {
+  padding: 3rem 0;
+  background: linear-gradient(to top, var(--ifm-color-primary-darkest), var(--ifm-color-primary-darker));
+}
+
+.footer__title {
+  color: var(--ifm-color-primary-lightest);
+}
+
+.footer__item_link {
+  color: #ccc;
+}
+
+.button, .footer__item_link {
+  transition: all 0.3s ease;
+}
+
+.button:hover, .footer__item_link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Blog Post Customization */
+.blog-list__item {
+  margin-bottom: 2rem;
+}
+
+.blog-list__item .card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-list__item .card:hover {
+  transform: translateY(-5px);
+}
+
+.markdown {
+  line-height: 1.75; /* Increased line-height for readability */
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-family: var(--ifm-font-family-headings);
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* Specific styling for blog post content */
+.blog-wrapper .post-content h1,
+.blog-wrapper .post-content h2,
+.blog-wrapper .post-content h3 {
+  color: var(--ifm-color-primary-dark); /* Use a darker primary color for headings */
+}
+
+html[data-theme='dark'] .blog-wrapper .post-content h1,
+html[data-theme='dark'] .blog-wrapper .post-content h2,
+html[data-theme='dark'] .blog-wrapper .post-content h3 {
+  color: var(--ifm-color-primary-light); /* Lighter primary color for headings in dark mode */
+}
+
+/* Tutorial Pages Redesign */
+
+.markdown {
+  line-height: 1.8;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-family: var(--ifm-font-family-headings);
+  margin-top: 2.5em;
+  margin-bottom: 1.2em;
+  border-bottom: 1px solid var(--ifm-color-primary-darkest);
+  padding-bottom: 0.3em;
+}
+
+.markdown p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.markdown ul,
+.markdown ol {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.markdown li {
+  margin-bottom: 0.75rem;
+}
+
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid var(--ifm-color-primary-darkest);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.markdown th {
+  background-color: var(--ifm-color-primary-darkest);
+  color: var(--ifm-color-primary-lightest);
+}
+
+.markdown pre {
+  background-color: #0d1117 !important;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.markdown code {
+  background-color: var(--ifm-color-primary-darkest);
+  color: var(--ifm-color-primary-light);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.markdown blockquote {
+  border-left: 5px solid var(--ifm-color-primary);
+  background-color: var(--ifm-color-primary-darkest);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
