@@ -17,7 +17,7 @@ const config: Config = {
   url: 'https://faqehanoor.github.io',
 
   // IMPORTANT: MUST END WITH SLASH
-  baseUrl: '/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook-with-chatbot/',
+  baseUrl: '/',
 
   organizationName: 'faqehanoor',
   projectName: 'Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook-with-chatbot',
