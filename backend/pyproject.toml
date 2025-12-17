@@ -1,0 +1,23 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Backend for AI-native-book application with content processing and analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.5.0",
+    "sqlalchemy>=2.0.23",
+    "asyncpg>=0.29.0",
+    "python-multipart>=0.0.6",
+    "cohere>=5.5.0",
+    "qdrant-client>=1.8.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.2",
+    "python-dotenv>=1.0.0"
+]
+
+[project.scripts]
+dev = "src.main:run_dev_server"
+start = "src.main:run_prod_server"
