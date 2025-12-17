@@ -9,21 +9,28 @@ const config: Config = {
   tagline: 'Mastering Embodied Intelligence & Humanoid Robotics',
   favicon: 'img/favicon.svg',
 
+  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true,
+    v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Your GitHub Pages URL
+  // Set the production url of your site here
   url: 'https://faqehanoor.github.io',
-
-  // IMPORTANT: MUST END WITH SLASH
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  organizationName: 'faqehanoor',
-  projectName: 'Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook-with-chatbot',
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'faqehanoor', // Usually your GitHub org/user name.
+  projectName: 'Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'ignore',
 
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -35,7 +42,10 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/faqehanoor',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/faqehanoor',
         },
         blog: {
           showReadingTime: true,
@@ -43,7 +53,11 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/faqehanoor',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/faqehanoor',
+          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -56,13 +70,12 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
-
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: true,
     },
-
     navbar: {
       title: 'Faqeha Noor',
       logo: {
@@ -77,6 +90,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+       
         {to: '/chatbot', label: 'Chatbot', position: 'left'},
         {
           href: 'https://github.com/faqehanoor',
@@ -85,7 +99,6 @@ const config: Config = {
         },
       ],
     },
-
     footer: {
       style: 'dark',
       links: [
@@ -105,6 +118,10 @@ const config: Config = {
               label: 'Discord',
               href: 'https://discordapp.com/invite/docusaurus',
             },
+            // {
+            //   label: 'Contact',
+            //   to: '/contact',
+            // },
           ],
         },
         {
@@ -114,13 +131,16 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/faqehanoor',
             },
+            // {
+            //   label: 'Glossary',
+            //   to: '/glossary',
+            // },
           ],
         },
+        
       ],
-      copyright: `Copyright © ${new Date().getFullYear()}
-      Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.`,
     },
-
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

@@ -6,10 +6,11 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-import Particles from "react-tsparticles";
+import Particles from "@tsparticles/react";
 import { loadFull } from "tsparticles";
-import type { Engine } from "tsparticles-engine";
+import type { Engine } from "@tsparticles/engine";
 import particlesOptions from "@site/src/tsparticles-config.json";
+import ChatWidget from '@site/src/components/ChatBot';
 
 import styles from './index.module.css';
 
@@ -65,6 +66,9 @@ export default function Home(): ReactNode {
       <main>
         <HomepageFeatures />
       </main>
+      <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
+        <ChatWidget />
+      </div>
     </Layout>
   );
 }
